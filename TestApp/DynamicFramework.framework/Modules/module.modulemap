@@ -1,0 +1,11 @@
+framework module DynamicFramework {
+  umbrella header "DynamicFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module DynamicFramework.Swift {
+    header "DynamicFramework-Swift.h"
+    requires objc
+}

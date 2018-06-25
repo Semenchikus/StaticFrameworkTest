@@ -1,0 +1,11 @@
+framework module StaticFramework {
+  umbrella header "StaticFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module StaticFramework.Swift {
+    header "StaticFramework-Swift.h"
+    requires objc
+}
